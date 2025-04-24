@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${userDTO.title}">Document</title>
+</head>
+<body>
+    <lu>
+     <li th:text="${userDTO.user.nombre}"></li>
+     <li th:text="${userDTO.user.Apellido}"></li>
+      <li th:if="${userDTO.email}" th:text="${userDTO.email}"></li>  
+      <li th:if="${userDTO.user.nombre != userDTO.title}" th:text="${'nombre es diferente de  titulo'}"></li>
+    </lu>
+
+    
+</body>
+</html>
