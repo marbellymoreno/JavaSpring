@@ -30,7 +30,6 @@ public class UserRestController {
   public String getMethodName(@RequestParam String param) {
       return new String();
   }
-  
   @GetMapping("/lista")
   public List<User> consultarUsurio (){
     User  user1 = new User("Alfredo", "Sorto");  
@@ -41,5 +40,7 @@ public class UserRestController {
     
     return  listaDeUsuarios ;
   }
+
+
 
 }

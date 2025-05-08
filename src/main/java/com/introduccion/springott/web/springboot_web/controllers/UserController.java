@@ -33,7 +33,6 @@ public String getMethodName(Model model) {
     return "detalles2";
 }
 
-
 @GetMapping("/lista")
 public String lista(ModelMap model){
     // List<User> user =  Arrays.asList(
